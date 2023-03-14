@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    background-color: black;
+    margin-top: 30px;
+}
+
+.footer-items {
+    display: flex;
+}
+
+.f-item-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20vw;
+}
+
+.f-item-1 .footer-globe {
+    height: 40px;
+}
+
+.f-item-1 a {
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.f-item-2 {
+    color: white;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.f-item-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    margin-top: 7px;
+    width: 23vw;
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.f-item-3 a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.f-item-3 a:hover {
+    color: blue;
+    text-decoration: underline;
+
+}
+
+.f-item-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    margin-top: 7px;
+    width: 23vw;
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.f-item-4 a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.f-item-4 a:hover {
+    color: blue;
+    text-decoration: underline;
+
+}
+
+
+.f-item-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    margin-top: 7px;
+    width: 23vw;
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.f-item-5 a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.f-item-5 a:hover {
+    color: blue;
+    text-decoration: underline;
+
+}
+
+.footer-end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding-top: 25px;
+}
+
+.f-end-1 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 20px;
+
+
+}
+
+hr {
+    height: 5px;
+    background-color: grey;
+}
+
+@media only screen and (max-width:900px) {
+    .f-item-1 a {
+        padding-left: 14px;
+        font-size: 30px;
+    }
+
+    .f-item-1 .footer-globe {
+        height: 24px;
+    }
+
+    .f-item-2 {
+        font-size: 16px;
+        padding-left: 30px;
+        width: 17vw;
+    }
+
+    .f-item-3 {
+        margin-top: 7px;
+        width: 22vw;
+        padding-top: 22px;
+    }
+
+    .f-item-3 a {
+        font-size: 17px;
+        padding-top: 16px;
+    }
+
+    .f-item-4 {
+        margin-top: 7px;
+        width: 22vw;
+        padding-top: 22px;
+    }
+
+    .f-item-4 a {
+        font-size: 17px;
+        padding-top: 16px;
+    }
+
+    .f-item-5 {
+        margin-top: 7px;
+        width: 22vw;
+        padding-top: 22px;
+    }
+
+    .f-item-5 a {
+        font-size: 17px;
+        padding-top: 16px;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    .f-item-1 {
+        justify-content: center;
+        flex-direction: column;
+        margin: 13px 1px;
+    }
+
+    .f-item-1 a {
+        padding-left: 14px;
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    .f-item-2 {
+        font-size: 16px;
+        padding-left: 0px;
+        width: 17vw;
+        padding-right: 20px;
+    }
+
+    .f-item-3 {
+        margin-top: 7px;
+        width: 22vw;
+        padding-top: 15px;
+    }
+
+    .f-item-3 a {
+        font-size: 15px;
+        padding-top: 8px;
+        padding-right: 5px;
+    }
+
+    .f-item-4 {
+        margin-top: 7px;
+        width: 22vw;
+        padding-top: 15px;
+    }
+
+    .f-item-4 a {
+        font-size: 15px;
+        padding-top: 8px;
+        padding-right: 5px;
+    }
+
+    .f-item-5 {
+        margin-top: 7px;
+        width: 22vw;
+        padding-top: 15px;
+    }
+
+    .f-item-5 a {
+        font-size: 15px;
+        padding-top: 8px;
+        padding-right: 5px;
+    }
+
+    hr {
+        height: 2px;
+    }
+
+}
+
+@media only screen and (max-width:550px) {
+    .footer-items {
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+    }
+
+    hr {
+        height: 1px;
+    }
+
+    .f-end-1 {
+        font-size: 17px;
+    }
+}

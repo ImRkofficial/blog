@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+header{
+    position: fixed;
+    width: 100vw;
+}
+.container{
+    background-color: rgb(0, 0, 0);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 128px;
+    padding-right: 128px;
+}
+.container img{
+    height: 80px;
+}
+
+nav a{
+text-decoration: none;
+font-family: 'Roboto', sans-serif;
+color: white;
+margin: 1px 25px;
+font-size: 25px;
+transition: all 0.3s ease-in-out;
+}
+nav a:hover{
+    color: rgb(61, 252, 115);
+    text-decoration: underline;
+}
+button .bar{
+    display: none;
+    height: 2px;
+width: 35px;
+margin-bottom: 2px;
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    display: none;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #FFF;
+    margin: 6px 0px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s
+}
+
+.hamburger.is-active:before {
+    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px)
+}
+
+.hamburger.is-active:after {
+    -webkit-transform: rotate(45deg) translate(-9px, -8px);
+    transform: rotate(45deg) translate(-9px, -8px)
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+background-color: #0000;
+padding-top: 120px;
+margin-top: 66px;
+}
+.mobile-nav a{
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: #151516;
+    color: #FFF;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 6px;
+}
+.mobile-nav a:hover{
+    text-decoration: underline;
+    color: rgb(1, 207, 28);
+    background-color: #1f103F;
+}
+.mobile-nav.is-active {
+    left: 0;
+    background: black;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:860px) {
+    .container{
+        padding-left: 80px;
+padding-right: 40px;
+    }
+    
+}
+
+@media only screen and (max-width:720px) {
+    .container img{
+        height: 66px;
+    }
+    nav a{
+        margin: 1px 19px;
+    }
+    .container{
+        padding-left: 50px;
+padding-right: 25px;
+    }
+    
+}
+
+@media only screen and (max-width:670px) {
+    nav{
+        display: none;
+    }
+    button bar{
+        display: block;
+    }
+    .hamburger{
+        display: block;
+    }
+}
+
+/* Content section */
+.content-header {
+    background-color: #f2dbdb;
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    border-radius: 7px;
+    padding-top: 150px;
+}
+
+.header-left {
+    width: 44vw;
+    padding: 0px 35px;
+}
+
+.header-left .heading {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.header-left p {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-right {
+    width: 20vw;
+    padding: 0px 70px;
+}
+
+.content-header img {
+    height: 280px;
+    border-radius: 140px;
+    border: 2px solid black;
+
+
+}
+
+.content-body {
+    background: #e7e5ee;
+    width: 80vw;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.main-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 40px;
+
+}
+
+.left-content img {
+    height: 198px;
+    border-radius: 8px;
+    width: 240px;
+}
+
+.left-content:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    transition-duration: 500ms;
+}
+
+.right-content {
+    width: 58vw;
+}
+
+.right-content h5 {
+    margin-bottom: 10px;
+}
+
+.right-content h5 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info p {
+    font-size: 18px;
+    color: #4d4949;
+    padding-bottom: 2px;
+    text-decoration: underline;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.right-content #time-section {
+    text-decoration: none;
+    color: #383861;
+    font-size: 16px;
+}
+
+
+
+
+
+/* TODO Media Queries */
+@media only screen and (max-width:1000px) {
+    .left-content img{
+        height: 170px;
+        border-radius: 6px;
+        width: 200px;
+      
+    }
+    .right-content{
+        width: 49vw;
+    }
+    .content-header img{
+        height: 225px;
+    }
+    
+}
+@media only screen and (max-width:800px) {
+    .left-content img{
+        height: 135px;
+        width: 168px;
+    }
+    .left-content:hover {
+        transform: scale(1.03);
+        z-index: 1;
+        transition-duration: 500ms;
+    }
+    .right-content h5 a{
+        font-size: 18px;
+        text-decoration: none;
+    }
+    .info p{
+        font-size: 17px;
+    }
+    .content-header img{
+        display: none;
+    }
+    .content-header{
+        display: block;
+        padding-top: 100px;
+        }
+    .header-left{
+        padding: 0px 20px;
+        width: auto;
+    }
+    .header-left .heading{
+        font-size: 37px;
+        margin-bottom: 7px;
+    }
+    .header-left p{
+        font-size: 19px;
+
+    }
+    .header-brand {
+        display: none;
+    }
+    .nav-item{
+        display: none;
+    }
+    .toogle-menu{
+        width: 100vw;
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+
+    }
+    .menu-bar{
+        display: inline-block;
+        cursor: pointer;
+    }
+    span .material-symbols-outlined .menu-bar{
+        font-size: 40px;
+    }
+
+
+}
+@media only screen and (max-width:600px) {
+    .main-block{
+        padding-left: 25px;
+    }
+    .left-content img{
+        height: 115px;
+        width: 135px;
+    }
+    .left-content:hover {
+        transform:none;
+
+    }
+    .right-content h5{
+        margin-bottom: 7px;
+    }
+    .right-content h5 a{
+        font-size: 17px;
+    }
+    .info p{
+        padding-bottom: 0px;
+    }
+   
+} 
+@media only screen and (max-width:550px) {
+    .main-block{
+        flex-direction: column;
+        text-align: center;
+    }    
+    .left-content img{
+        margin-bottom: 10px;
+    }
+
+}
+       
